@@ -8,14 +8,14 @@ Estudo dos principais Design Patterns Aplicados com Java em acompanhamento ao cu
 O Factory Method permite uma classe delegar a instanciação a subclasse." (Gang Of Four)
 
 O diagrama abaixo representa o padrão Factory Method. A classe *Creator* tem contato apenas com a *interface Product*, não sabe como cria um produto concreto. A subclasse de Creator é que conhece como criar um objeto através da implementação da interface *Product*.
-![Diagrama Factory Method](factory-method-diagrama.png)
+![Diagrama Factory Method](FactoryMethod/factory-method-diagrama.png)
 
 No nosso exemplo implementamos em MalaDiretaLib a classe abstrata [MalaDireta](maladireta-lib/src/main/java/com/algaworks/maladireta/MalaDireta.java) como abstração para o *Creator* e a interface [ContatoRepository](maladireta-lib/src/main/java/com/algaworks/contato/ContatoRepository.java)/Contatos como abstração para *Product* no diagrama anterior. 
 As subclasses [MalaDiretaCSV](maladireta-cliente/src/main/java/com/algaworks/maladireta/csv/MalaDiretaCSV.java) e [MalaDiretaXML](maladireta-cliente/src/main/java/com/algaworks/maladireta/xml/MalaDiretaXML.java) ficam responsáveis por importar uma implementação e instanciação de um ContatoRepository.  
 
 As subclasses de Contatos (ContatoRepository) ficam com a responsabilidade de criação da lista de objetos Contatos. 
 
-![Diagrama do exemplo](diagrama-mala-direta-lib.png) 
+![Diagrama do exemplo](FactoryMethod/diagrama-mala-direta-lib.png) 
 
 <b>Classe Abstrata *vs* Interface</b>
 Basicamente, além de outras diferenças: a classe abstrata pode conter implementações e a interface apenas definições.
