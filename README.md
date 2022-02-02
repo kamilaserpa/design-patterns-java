@@ -22,6 +22,10 @@ Basicamente, além de outras diferenças: a classe abstrata pode conter implemen
 Uma classe pode implementar múltiplas interfaces, mas estender apenas uma classe abstrata.
 A classe abstrata é uma calsse, não traz relação "*é um*". Classe abstrata pode conter construtor, a interface não.
 
+## Builder
+"O <b>Padrão</b> Builder é um parão que permite a criação passo-a-passo de objetos complexos usando uma sequencia de ações. A construção é controlada por objeto diretor que apenas precisa conter o tipo do objetos que deve ser criado." (*Design Patterns: Elements od Reusable Object-Oriented from the Gang Of Four*).
+
+![Diagrama Builder](Builder/diagrama-builder.png)
 
 ### Notes
 Para adicionar um projeto local como dependência em outro projeto no Intellij siga os passos descritos em https://www.jetbrains.com/help/idea/working-with-module-dependencies.html#add-a-new-dependency.
