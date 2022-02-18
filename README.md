@@ -27,5 +27,17 @@ A classe abstrata é uma calsse, não traz relação "*é um*". Classe abstrata 
 
 ![Diagrama Builder](Builder/diagrama-builder.png)
 
+## Abstract Factory
+
+"O <b>Padrão Abstract Factory</b> fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas." *Head First Design Patterns*
+
+No projeto exemplo o [Pagamento](AbstractFactory/modulo-pagamento-abstract-factory/src/main/java/com/algaworks/pagamento/Pagamento.java) depende de uma implementação abstrata de [ModuloPagamentoFactory](AbstractFactory/modulo-pagamento-abstract-factory/src/main/java/com/algaworks/pagamento/factory/ModuloPagamentoFactory.java) para criar um Gestor de Risco e uma Operadora para então realizar pagamento.
+
+![Diagrama de classes Abstract Factory](AbstractFactory/diagrama-classes-abstract-factory.png)
+
+#### Exemplo de estrutura de bilioteca e implementação expansível
+
+![Exemplo de estrutura 'fixa' (biblioteca) e expansível](AbstractFactory/biblioteca-abstract-factory.png)
+
 ### Notes
 Para adicionar um projeto local como dependência em outro projeto no Intellij siga os passos descritos em https://www.jetbrains.com/help/idea/working-with-module-dependencies.html#add-a-new-dependency.
