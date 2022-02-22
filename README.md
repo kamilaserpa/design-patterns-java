@@ -39,5 +39,12 @@ No projeto exemplo o [Pagamento](AbstractFactory/modulo-pagamento-abstract-facto
 
 ![Exemplo de estrutura 'fixa' (biblioteca) e expansível](AbstractFactory/biblioteca-abstract-factory.png)
 
+## Proxy
+
+Padrão de desenvolvimento com algumas variações, como criaçao de proxy remoto, controlando acesso a objetos que estão em outra JVM; proxy virtual, controla acesso a um recurso cuja criação pode ser onerosa/demorada; proxy de proteção, que controla acesso a algum recurso baseado em permissões; entre outras variações. O foco será o **proxy virtual**.
+
+"O <b>Padrão Proxy</b> fornece um substituto ou representante de outro objeto para controlar o acesso a ele." *Head First Design Patterns*
+![Diagrama proxy do eprojeto exemplo](Proxy/diagrama-proxy.png)
+
 ### Notes
 Para adicionar um projeto local como dependência em outro projeto no Intellij siga os passos descritos em https://www.jetbrains.com/help/idea/working-with-module-dependencies.html#add-a-new-dependency.
