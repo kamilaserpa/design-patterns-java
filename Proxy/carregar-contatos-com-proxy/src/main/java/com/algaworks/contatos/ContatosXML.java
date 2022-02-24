@@ -1,13 +1,14 @@
 package com.algaworks.contatos;
 
 import com.algaworks.model.Contato;
+import com.algaworks.repository.ContatosRepository;
 import com.thoughtworks.xstream.XStream;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ContatosXML {
+public class ContatosXML implements ContatosRepository {
 
     private Map<String, String> contatosEmCache = new HashMap<>();
 
